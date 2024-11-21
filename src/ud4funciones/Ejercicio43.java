@@ -3,6 +3,11 @@ package ud4funciones;
 public class Ejercicio43 {
 	static void dibujarRectangulo(int ancho, int alto) {
 
+		if (ancho <= 0 || alto <= 0) {
+			System.out.print("Error: el ancho y el alto deben ser positivos.");
+			return;
+		}
+		
 		for (int i = 0; i < alto; i++) {
 			for (int j = 0; j < ancho; j++) {
 				System.out.print("*");
